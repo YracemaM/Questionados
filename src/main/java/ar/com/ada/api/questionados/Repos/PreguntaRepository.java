@@ -1,12 +1,8 @@
-package ar.com.ada.api.questionados.Repos;
+package ar.com.ada.api.questionados.repos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import ar.com.ada.api.questionados.entities.*;
 import org.springframework.stereotype.Repository;
-
-import ar.com.ada.api.questionados.Entities.Pregunta;
-
 @Repository
-
-public interface PreguntaRepository extends JpaRepository<Pregunta, Integer>{
-    
+public interface PreguntaRepository extends JpaRepository<Pregunta, Integer> {
 }
