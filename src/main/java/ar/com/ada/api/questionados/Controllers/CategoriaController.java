@@ -1,6 +1,6 @@
 package ar.com.ada.api.questionados.controllers;
 
-import java.util.List;
+import java.util.*;
 
 import com.fasterxml.classmate.GenericType;
 
