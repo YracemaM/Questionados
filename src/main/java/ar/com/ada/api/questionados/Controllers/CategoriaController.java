@@ -1,8 +1,6 @@
 package ar.com.ada.api.questionados.controllers;
 
-import java.util.*;
-
-import com.fasterxml.classmate.GenericType;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +30,7 @@ public class CategoriaController {
 
     @PostMapping(value = "/categorias")
     public ResponseEntity<?> crearCategoria(@RequestBody Categoria categoria) {
-        GenericType r = new GenericResponse();
+        GenericResponse r = new GenericResponse();
 
         if (service.crearCategoria(categoria)) {
             r.id = categoria.getCategoriaId();
